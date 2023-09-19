@@ -9,20 +9,18 @@
 // Courtesy of projecteuler.net (Problem 1)
 
 function solution(number){
-  const multiples = [3, 5, 6, 9]
   let sum = 0
 
   if (number <= 0) {
     return 0;
   } else {
-    for (let i = 0; i < multiples.length; i++) {
-      if (multiples[i] <= number) {
-        sum += multiples[i];
+    for (let i = 0; i <= number; i++) {
+      if ( i % 3 === 0 || i % 5 === 0 ) {
+        console.log("Adding ", i , " to ", sum)
+        sum += i;
+        console.log("which equals ", sum)
       }
     }
     return sum;
   }
 }
-
-const result = solution(5)
-console.log(result)
