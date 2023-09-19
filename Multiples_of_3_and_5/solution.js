@@ -14,11 +14,9 @@ function solution(number){
   if (number <= 0) {
     return 0;
   } else {
-    for (let i = 0; i <= number; i++) {
+    for (let i = 0; i < number; i++) {
       if ( i % 3 === 0 || i % 5 === 0 ) {
-        console.log("Adding ", i , " to ", sum)
         sum += i;
-        console.log("which equals ", sum)
       }
     }
     return sum;
