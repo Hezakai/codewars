@@ -47,4 +47,4 @@ function toCamelCase(str){
 }
 ```
 
-This solution is very similar to the previous solution.  It also uses regex but applies it slighty differently.  I like both of these solutions because they are very concise and easy to read.  
+This solution is very similar to the previous solution.  It also uses regex but applies it slightly differently.  I like both of these solutions because they are very concise and easy to read.  
